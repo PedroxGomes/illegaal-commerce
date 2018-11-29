@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="../public/css/pi.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/pi.css')}}">
     <meta charset="utf-8">
     <title>ILLEGAL BEER BRASIL</title>
   </head>
@@ -20,11 +20,11 @@
   </div>
 </div>
 <div class="w3-content w3-section" style="max-width:500px"> 
-  <img class="beer" src="../public/images/beer.png" style="width:20%">
-  <img class="beer-02" src="../public/images/beer-02.png" style="width:40%">
-  <img class="div-01" src="../public/images/div-01.png" style="width:105%">
-  <img class="slideshow" src="../public/images/cassel-01.png" style="width:380.8%">
-  <img class="slideshow" src="../public/images/cassel-02.png" style="width:380.8%">
+  <img class="beer" src="{{ asset('/images/beer.png')}}" style="width:20%">
+  <img class="beer-02" src="{{ asset ('/images/beer-02.png')}}" style="width:40%">
+  <img class="div-01" src="{{ asset ('/images/div-01.png')}}" style="width:105%">
+  <img class="slideshow" src="{{ asset ('/images/cassel-01.png')}}" style="width:380.8%">
+  <img class="slideshow" src="{{ asset ('/images/cassel-02.png')}}" style="width:380.8%">
 </div>
 
 <div class="content">

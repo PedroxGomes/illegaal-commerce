@@ -12,9 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('illegaal');
 });
 
 Route::get('/illegaal', function () {
     return view('illegaal');
 });
+
+Route::get('/cadastro', function () {
+    return view('cadastro');
+});
+
+Route::post('/cadastro', "cadastroLogin@cadastrar");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
