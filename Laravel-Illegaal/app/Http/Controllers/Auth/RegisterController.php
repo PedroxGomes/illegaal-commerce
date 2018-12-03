@@ -52,11 +52,9 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'telefone'=> 'required|number|min:9',
-            'UF'=> 'required|string',
-            'Cep'=> 'required|number|min:8',
-            'Cidade'=> 'required|string',
-            'Endereco'=> 'required|string'
+            'telefone'=> 'required|numeric|min:9',
+            'Cep'=> 'required|numeric|min:8',
+            'CPF'=> 'required|numeric|min:11'
         ]);
     }
 
@@ -72,11 +70,9 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'telefone' => $data['telefone'],
-            'UF' =>$data['UF'],
+            'Telefone' => $data['telefone'],
             'Cep' => $data['Cep'],
-            'Cidade'=> $data['Cidade'],
-            'Endereco' => $data['Endereco']
+            'Cpf' => $data['Cpf']
         ]);
     }
 }

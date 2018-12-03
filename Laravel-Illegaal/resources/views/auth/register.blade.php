@@ -66,7 +66,7 @@
                             <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telefone" type="telefone" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="email" value="{{ old('telefone') }}" required>
+                                <input id="telefone" type="telefone" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}" name="telefone" value="{{ old('telefone') }}" required>
 
                                 @if ($errors->has('telefone'))
                                     <span class="invalid-feedback" role="alert">
@@ -74,7 +74,7 @@
                                     </span>
                                 @endif
                             </div> 
-
+                        </div>
                             
                          <div class="form-group row">
                             <label for="Cep" class="col-md-4 col-form-label text-md-right">{{ __('Cep ') }}</label>
@@ -88,33 +88,37 @@
                                     </span>
                                 @endif
                             </div> 
+                        </div>
 
+                        <div class="form-group row">
+                            <label for="Cpf" class="col-md-4 col-form- label 
+                            text-md-right">{{__('Cpf')  }}</label>
+                        
+
+                            <div class="col-md-6">
+                                <input id="Cpf" type="Cpf" class="forme-control{{$errors->has('Cpf') ? ' is-invalid' : '' }}"
+                                name='Cpf' value="{{ old('Cpf') }}" required>
+
+                                @if ($errors->has('Cpf'))
+                                    <span class= "invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Cpf') }}</strong>
+                                    </span>
+                                @endif
+                               </div>                               
                             </div>
 
-                           <div class="form-group row">
-                               <label for="phoneNumber" class="col-md-4 col-form-label text-md-right">
-                               {{ __('Telefone') }}</label>
-
-                          <div class="col-md-6">
-                             <input id="phoneNumber" type="tel" class="form-control{{ $errors->has('phoneNumber') ? ' is-invalid' : '' }}" name="phoneNumber" value="{{ old('phoneNumber') }}" required autofocus>
-                                 @if ($errors->has('phoneNumber'))
-                                     <span class="invalid-feedback" role="alert">
-                                  <strong>{{ $errors->first('phoneNumber') }}</strong>
-                                     </span>
-                                        @endif
-                                      </div>
-                                       </div>
+                       
                                           <br/>
-                                <div class="form-group row mb-0">
-                                  <div class="col-md-6 offset-md-4">
-                        
-                                                           
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">                        
                                    <div class="form-group row mb-0">
                                       <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
                                            {{ __('Register') }}
-                                 </button>
-                            </div>
+                                    </button>
+                                        </div>
+                                    </div>
+                              </div>
                         </div>
                     </form>
                 </div>
