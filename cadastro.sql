@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Dez-2018 às 19:35
+-- Generation Time: 04-Dez-2018 às 20:24
 -- Versão do servidor: 10.1.35-MariaDB
 -- versão do PHP: 7.2.9
 
@@ -51,7 +51,8 @@ CREATE TABLE `clientes` (
   `Telefone` float DEFAULT NULL,
   `data_de_nascimento` date DEFAULT NULL,
   `nome_completo` varchar(50) DEFAULT NULL,
-  `Estado` varchar(30) DEFAULT NULL
+  `Estado` varchar(30) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
