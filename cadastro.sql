@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Nov-2018 às 12:29
--- Versão do servidor: 10.1.34-MariaDB
--- PHP Version: 7.2.8
+-- Generation Time: 04-Dez-2018 às 19:35
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -48,9 +48,10 @@ CREATE TABLE `clientes` (
   `Endereco` varchar(30) NOT NULL,
   `Cidade` varchar(30) NOT NULL,
   `Cep` float DEFAULT NULL,
-  `UF` float DEFAULT NULL,
-  `Pais` varchar(20) DEFAULT 'Brasil',
-  `Telefone` float DEFAULT NULL
+  `Telefone` float DEFAULT NULL,
+  `data_de_nascimento` date DEFAULT NULL,
+  `nome_completo` varchar(50) DEFAULT NULL,
+  `Estado` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
