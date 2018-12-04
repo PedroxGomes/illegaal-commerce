@@ -91,17 +91,17 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="Cpf" class="col-md-4 col-form- label 
-                            text-md-right">{{__('Cpf')  }}</label>
+                            <label for="Data_De_Nascimento" class="col-md-4 col-form- label 
+                            text-md-right">{{__('Data_De_Nascimento')  }}</label>
                         
 
                             <div class="col-md-6">
-                                <input id="Cpf" type="Cpf" class="forme-control{{$errors->has('Cpf') ? ' is-invalid' : '' }}"
-                                name='Cpf' value="{{ old('Cpf') }}" required>
+                                <input id="Data_De_Nascimento" type="Data_De_Nascimento" class="forme-control{{$errors->has('Data_De_Nascimento') ? ' is-invalid' : '' }}"
+                                name='Data_De_Nascimento' value="{{ old('DataDeNascimento') }}" required>
 
-                                @if ($errors->has('Cpf'))
+                                @if ($errors->has('Data_De _Nascimento'))
                                     <span class= "invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('Cpf') }}</strong>
+                                        <strong>{{ $errors->first('Data_De_Nascimento') }}</strong>
                                     </span>
                                 @endif
                                </div>                               
