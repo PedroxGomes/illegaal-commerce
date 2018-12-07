@@ -37,3 +37,10 @@ Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos")->name('ca
 Route::get('/admin/cadastrarclientes', "adminLogin@cadastrarclientes")->name('cadastrarcliente');
 
 Route::get('/admin/editarprodutos', "adminLogin@editarprodutos")->name('editarprodutos');
+
+Route::get('/admin/editarprodutos', "adminLogin@editarprodutos");
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
