@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Dez-2018 às 20:24
+-- Generation Time: 06-Dez-2018 às 13:21
 -- Versão do servidor: 10.1.35-MariaDB
 -- versão do PHP: 7.2.9
 
@@ -48,11 +48,9 @@ CREATE TABLE `clientes` (
   `Endereco` varchar(30) NOT NULL,
   `Cidade` varchar(30) NOT NULL,
   `Cep` float DEFAULT NULL,
-  `Telefone` float DEFAULT NULL,
-  `data_de_nascimento` date DEFAULT NULL,
-  `nome_completo` varchar(50) DEFAULT NULL,
-  `Estado` varchar(30) DEFAULT NULL,
-  `email` varchar(30) DEFAULT NULL
+  `UF` float DEFAULT NULL,
+  `Pais` varchar(20) DEFAULT 'Brasil',
+  `Telefone` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
