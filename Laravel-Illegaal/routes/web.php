@@ -33,3 +33,8 @@ Route::get('/admin/listagemprodutos', "adminLogin@listagemprodutos");
 Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos");
 
 Route::get('/admin/editarprodutos', "adminLogin@editarprodutos");
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

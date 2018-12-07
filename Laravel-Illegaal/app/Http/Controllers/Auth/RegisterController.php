@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/illegaal';
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -52,14 +52,6 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-<<<<<<< HEAD
-            'telefone'=> 'required|numeric|min:9',
-            'Cep'=> 'required|numeric|min:8'
-=======
-            'Cep'=> 'required|numeric|min:8',
-            'Telefone'=> 'required|numeric|min:9',
-            'Data_De_Nascimento'=> 'required|numeric|min:8',
->>>>>>> 4af23ec914e53e942f4eec67dbdc4db01083fba7
         ]);
     }
 
@@ -71,16 +63,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return clientes::create([
+        return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'Cep' => $data['Cep'],
-<<<<<<< HEAD
-=======
-            'Telefone' => $data['telefone'],
-            'Data_De_Nascimento' => $data['Data_De_Nascimento'],
->>>>>>> 4af23ec914e53e942f4eec67dbdc4db01083fba7
         ]);
     }
 }
