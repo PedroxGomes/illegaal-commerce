@@ -28,8 +28,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/admin/listagemprodutos', "adminLogin@listagemprodutos");
+Route::get('/admin', "adminLogin@home")->name('admin');
 
-Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos");
+Route::get('/admin/listagemprodutos', "adminLogin@listagemprodutos")->name('listagemprodutos');
 
-Route::get('/admin/editarprodutos', "adminLogin@editarprodutos");
+Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos")->name('cadastrarprodutos');
+
+Route::get('/admin/cadastrarclientes', "adminLogin@cadastrarclientes")->name('cadastrarcliente');
+
+Route::get('/admin/editarprodutos', "adminLogin@editarprodutos")->name('editarprodutos');

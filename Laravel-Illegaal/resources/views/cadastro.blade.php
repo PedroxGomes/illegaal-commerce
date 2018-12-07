@@ -20,7 +20,7 @@
     </form>
     <script type="text/javascript">
 
-      
+
        let form = document.getElementById("cadastro");
        form.onsubmit = function(event) {
         event.preventDefault();
@@ -45,16 +45,16 @@
           }
 
          if(this.elements.senha.value != this.elements.senha2.value){
-           erros.push("Senhas não conferem");  
-         } 
+           erros.push("Senhas não conferem");
+         }
 
          if(erros.length > 0){
             alert("Corrija os seguintes erros:\r-"+erros.join("\r-"));
             event.preventDefault();
             return false;
          }
-       } 
-         
+       }
+
        </script>
   </body>
 </html>

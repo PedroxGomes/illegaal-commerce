@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class adminLogin extends Controller
 {
+    public function home(Request $r){
+       if ($r-> isMethod('get')){
+         return view('homeAdmin');
+       }
+     }
 
     public function listagemprodutos(Request $r){
          if ($r-> isMethod('get')){
@@ -24,6 +29,11 @@ class adminLogin extends Controller
          return view('editarprodutos');
        }
      }
+     public function cadastrocliente(Request $r){
+        if ($r-> isMethod('get')){
+          return view('cadastrocliente');
 
 
-}
+        }
+      }
+    }
