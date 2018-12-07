@@ -27,3 +27,9 @@ Route::post('/cadastro', "cadastroLogin@cadastrar");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin/listagemprodutos', "adminLogin@listagemprodutos");
+
+Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos");
+
+Route::get('/admin/editarprodutos', "adminLogin@editarprodutos");

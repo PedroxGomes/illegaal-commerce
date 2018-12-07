@@ -90,6 +90,28 @@
                             </div> 
                         </div>
 
+<<<<<<< HEAD
+=======
+                        <div class="form-group row">
+                            <label for="Data_De_Nascimento" class="col-md-4 col-form- label 
+                            text-md-right">{{__('Data_De_Nascimento')  }}</label>
+                        
+
+                            <div class="col-md-6">
+                                <input id="Data_De_Nascimento" type="Data_De_Nascimento" class="forme-control{{$errors->has('Data_De_Nascimento') ? ' is-invalid' : '' }}"
+                                name='Data_De_Nascimento' value="{{ old('DataDeNascimento') }}" required>
+
+                                @if ($errors->has('Data_De _Nascimento'))
+                                    <span class= "invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Data_De_Nascimento') }}</strong>
+                                    </span>
+                                @endif
+                               </div>                               
+                            </div>
+
+                       
+                                          <br/>
+>>>>>>> 4af23ec914e53e942f4eec67dbdc4db01083fba7
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">                        
                                    <div class="form-group row mb-0">
