@@ -17,7 +17,7 @@
       <a class="login-entrar" href="#about">Entrar</a>
       <button type="submit">Cadastre-se</button>
     </div>
-    <img class="fundo-paginas" src="images/texture.jpg" style="height:1325px">
+    <img class="fundo-paginas" src="{{ ('/images/texture.jpg)}}" style="height:1325px">
     <div class="sobre-nos">
       <h1 class="titulo-sobre-nos">Quem somos<h1>
       <h3 class="texto-sobre-nos">O ano era 1996. O lugar, o interior de São Paulo, mais precisamente em Ribeirão Preto. Terra do chope, do café e do calor. Tem quem chame de Califórnia brasileira. Mas praia, não tem não. Enquanto isso, eu era só o Marcelo Carneiro, carioca chegando em Ribeirão, empresário do ramo farmacêutico. Mal sabia que a decisão de investir o meu tempo em outra paixão ia me transformar no “Marcelo da Colorado”. Escolhi trabalhar com algo que não remedia, mas sim que previne doenças: cerveja, amigos e diversão. Assim nasceu a Colorado. Com um sorriso no rosto e a paixão em fazer cerveja.
@@ -32,7 +32,7 @@ As próximas páginas deste livro vão te levar a desbravar o território da Col
     </div>
 <div class="video">
   <video width="1000" height="720" controls>
-    <source src="images/ILLEGAAL.mp4" type="video/mp4">
+    <source src="{{ ('/images/ILLEGAAL.mp4)}}"  type="video/mp4">
   </video>
 
 </div>

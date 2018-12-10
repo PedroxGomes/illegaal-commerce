@@ -21,11 +21,11 @@
 <div class="pagina-produtos">
 
 </div>
-<img class="fundo-paginas" src="images/texture.jpg" style="height:1000px">
+<img class="fundo-paginas" src="^{{ ('/images/texture.jpg)}}" style="height:1000px">
 
 <div class="caixa-produto">
-<img class="fundo-produto" src="images/fundo-produto.png" style="height:750px">
-<img class="produto" src="images/beer.png" style="width:30%">
+<img class="fundo-produto" src="{{ ('/images/fundo-produto.png)}}" style="height:750px">
+<img class="produto" src="{{('/images/beer.png)}}" style="width:30%">
 <div class="caixa-botao01">
 <a href="#" class="botao01">Comprar</a>
 </div>
@@ -35,8 +35,8 @@
 </div>
 
 <div class="caixa-produto-2">
-<img class="fundo-produto-2" src="images/fundo-produto.png" style="height:750px">
-<img class="produto-2" src="images/beer-03.png" style="width:30%">
+<img class="fundo-produto-2" src="{{ '/images/fundo-produto.png)}}" style="height:750px">
+<img class="produto-2" src="{{ '/images/beer-03.png)}}" style="width:30%">
 <div class="caixa-botao01">
 <a href="#" class="botao01">Comprar</a>
 </div>
@@ -46,8 +46,8 @@
 </div>
 
 <div class="caixa-produto-3">
-<img class="fundo-produto-3" src="images/fundo-produto.png" style="height:750px">
-<img class="produto-3" src="images/beer-04.png" style="width:30%">
+<img class="fundo-produto-3" src="{{ '/images/fundo-produto.png)}}" style="height:750px">
+<img class="produto-3" src=" {{('/images/beer-04.png)}}" style="width:30%">
 <div class="caixa-botao01">
 <a href="#" class="botao01">Comprar</a>
 </div>

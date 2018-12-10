@@ -35,12 +35,12 @@
 
     </header>
     <section id="principal">
-        <img class="slideshow" src="images/cassel-01.png" style="width:100%" style="height:600px">
-        <img class="slideshow" src="images/cassel-02.png" style="width:100%" style="height:600px">
+        <img class="slideshow" src="{{ asset ('/images/cassel-01.png)}}" style="width:100%" style="height:600px">
+        <img class="slideshow" src="{{ asset ('/images/cassel-02.png)}}" style="width:100%" style="height:600px">
 
       <div class="section-elements">
-        <img class="beer-02" src="images/beer-02.png" style="width:40%">
-        <img class="beer" src="images/beer.png" style="width:20%">
+        <img class="beer-02" src="{{ asset ('/images/beer-02.png)}}" style="width:40%">
+        <img class="beer" src="{{ asset ('/images/beer.png)}}" style="width:20%">
 
 
         <div class="content">
@@ -52,7 +52,7 @@
         <h2>Videos</h2>
         <div class="video">
           <video width="1000" height="720" controls>
-            <source src="images/ILLEGAAL.mp4" type="video/mp4">
+            <source src="{{ asset ('/images/ILLEGAAL.mp4)}}" type="{{ asset ('/video/mp4)}}">
           </video>
 
         </div>
