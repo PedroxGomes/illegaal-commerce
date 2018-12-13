@@ -3,10 +3,12 @@
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{asset('css/illegaal.css')}">
     <title></title>
   </head>
   <body>
-    @yield("header")
+    @include("site.header")
+    @yield("content")
     <script>
     var myIndex = 0;
     carousel();

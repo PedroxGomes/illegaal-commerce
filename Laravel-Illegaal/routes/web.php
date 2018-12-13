@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('illegaal');
+    return view('site.home');
 });
 
 Route::get('/illegaal', function () {
