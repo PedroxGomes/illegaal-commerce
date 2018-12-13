@@ -1,0 +1,404 @@
+.card-body {
+background-image: url("../images/texture-02.jpg");
+}
+
+.card-header {
+background-image: url("../images/texture-02.jpg");
+}
+
+
+.btn {
+background-image: url("../images/texture-02.jpg");
+
+}
+
+{box-sizing: border-box;}
+
+@font-face {
+    font-family: 'Avenida';
+    src: url('Fonts/Avenida-Std-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background-color: black;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 5.5%;
+  margin-top: -0.1%;
+}
+
+  /* Style the navbar */
+.topnav {
+  position: relative;
+  font-family: "Avenida";
+  overflow: hidden;
+  background: url("/images/texture.jpg");
+  margin-top: -0.1%;
+
+}
+
+/* Navbar links */
+.topnav .botoes {
+  float:right;
+  display: flex;
+  color: white;
+  text-align:center;
+  padding: 37px 32px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav .botoes-total {
+  float:right;
+  text-align:center;
+  margin-right: 37%;
+
+}
+
+.fundo-paginas {
+position:relative;
+}
+
+.caixa-produto {
+  right: 60%;
+  top: 3%;
+  position: absolute;
+}
+
+.caixa-produto-2 {
+  top: 3%;
+  left: 26%;
+  position: absolute;
+}
+
+.caixa-produto-3 {
+  top: 3%;
+  left: 60%;
+  position: absolute;
+}
+
+.produto {
+  position: absolute;
+  top: 22.5%;
+  left: 34.5%;
+  z-index: 1;
+}
+
+.produto-2 {
+  position: absolute;
+  top: 22.5%;
+  left: 34.5%;
+  z-index: 1;
+}
+
+.produto-3 {
+  position: absolute;
+  top: 22.5%;
+  left: 34.5%;
+  z-index: 1;
+}
+
+.caixa-botao01 {
+  position: relative;
+  margin-left: 40%;
+  margin-top: -1%;
+  z-index: 6;
+}
+
+.texto-produtos {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  line-height: 17px;
+  text-align: center;
+  z-index: 5;
+}
+
+.caixa-texto-produtos {
+  position: absolute;
+  width: 42%;
+  left: 28.7%;
+  top: 75%;
+  z-index: 5;
+}
+
+.sobre-nos {
+  position: absolute;
+  width: 70%;
+  left: 15.7%;
+  top: 10%;
+  z-index: 5;
+}
+
+.texto-sobre-nos {
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  line-height: 23px;
+  text-align: left;
+  z-index: 5;
+}
+
+.titulo-sobre-nos{
+  color: white;
+}
+
+input, textarea {
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    line-height: 100px;
+    width: 90px;
+    height: 100%;
+    text-align: right;
+}
+
+.contato {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    /* Para ver as bordas do formulário */
+
+    border: 0px solid #CCC;
+    border-radius: 1em;
+    color:  white;
+    margin-top: 11%;
+    margin-left: 31%;
+
+    position: absolute;
+    z-index: 10;
+}
+
+
+.video {
+  position: absolute;
+  left: 15.7%;
+  top: 40%;
+  z-index: 8;
+}
+
+.video-2 {
+  position: absolute;
+  left: 6.7%;
+  top: 110%;
+  z-index: 8;
+}
+
+.bg_video{
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+}
+
+.midias-socias{
+  margin: 0 auto;
+position: ;
+left: 40%;
+margin-top: 70%;
+width: 1300px;
+}
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background: url("images/texture-02.jpg");
+  color: white;
+}
+
+/* Active/current link */
+.topnav a.active {
+background: url("images/texture-02.jpg");
+  color: white;
+}
+
+/* Style the input container */
+.topnav .login-container {
+  float: right;
+  margin-top: -3.2%;
+  color: white;
+  width: 180px;
+  margin-right: 17%;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=text] {
+  background: url("images/texture-02.jpg");
+  padding: 1%;
+  margin-top: 5.9%;
+  font-size: 17px;
+  border: none;
+  width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+
+/* Style the button inside the input container */
+.topnav .login-container button {
+  float: right;
+  padding: 6px;
+  margin-top: -8.5%;
+  margin-right: 16px;
+  color: white;
+  background-color: rgba(10,23,55,0.1);
+  font-size: 17px;
+  border-color:  white;
+  cursor: pointer;
+  border-radius: 3px;
+
+}
+.topnav .login-container .login-entrar {
+margin-right: 2%;
+color: white;
+font-size: 17px;
+
+}
+
+.topnav .login-container button:hover {
+opacity: 50%;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav .login-container {
+    float: none;
+  }
+  .topnav .botoes, .topnav input[type=text], .topnav .login-container button {
+    float: none;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    left: -40%;
+
+  }
+  .topnav input[type=text] {
+    border: 1px solid #F4A460;
+  }
+}
+
+@media screen and (max-width: 872px) {
+.beer{
+  left: 79%;
+  top: 120%;
+  z-index: 1;
+}
+
+
+}
+
+
+/*centrlizando login no nav bar */
+.form-login {
+  	position: absolute;
+  	top: 10.2%;
+  	left: 78.4%;
+
+  	margin: -70px 0 0 -170px;
+}
+/* posicao cerveja*/
+.beer {
+  position:absolute;
+  left: 79%;
+  top: 22%;
+  z-index: 1;
+}
+
+/* posicao cerveja-2*/
+.beer-02 {
+  position:absolute;
+  left: 58%;
+  top: 31%;
+  z-index: 2;
+}
+
+/* posicao de divisoria*/
+.div-01 {
+  position:absolute;
+  left: -0.1%;
+  top: 45%;
+  z-index: 0;
+}
+
+
+/*carrosel*/
+.slideshow {
+  height: 600px;
+}
+
+/* botao*/
+.content{z-index: 5;margin-top: -3%;margin-left: 79.9%; position: relative;}
+.botao01{
+     background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     border: 1px solid #CCCCCE;
+     border-radius: 3px;
+     box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
+                   0 2px 7px rgba(0, 0, 0, 0.2);
+     background: url("images/texture-02.jpg");
+     display: block;
+     font-family: "Avenida";
+     font-size: 24px;
+     font-weight: bold;
+     line-height: 25px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+     text-shadow:1px 1px 0 #FFF;
+     padding: 5px 16px;
+     position: relative;
+     width: 80px;
+     color: black;
+}
+
+.:before{
+     border: 1px solid #FFF;
+     border-radius: 3px;
+     box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
+                   inset 0 3px 2px -1px rgba(255, 255, 255, 1);
+     content: "";
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 0;
+     padding: 5px;
+     position: absolute;
+    }
+
+    .botao01:after{
+     background: rgba(255, 255, 255, .4);
+     border-radius: 2px;
+     content: "";
+     bottom: 15px;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     position: absolute;
+    }
+ .botao01:active{
+     box-shadow: inset 0 0 7px rgba(0, 0, 0, .2);
+     top: 4px;
+    }
+    .botao01:active:before{
+     border: none;
+     box-shadow:none;
+
+    }
