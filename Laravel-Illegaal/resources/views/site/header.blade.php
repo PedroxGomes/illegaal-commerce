@@ -6,8 +6,9 @@
 <a class="botoes" href="proj-integrador.html">Home</a>
 </div>
 <div class="login-container">
- <a class="login-entrar" href="#about">Entrar</a>
-  <button type="submit" href="cadastro.html">Cadastre-se</button>
+ <a class="login-entrar" href="login">Entrar</a>
+ <a class="login-entrar" href="register">Cadastre-se</a>
+
 
 </div>
 </div>

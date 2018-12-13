@@ -23,7 +23,10 @@ background-image: url("../images/texture-02.jpg");
 
 
 body {
-  background-color: black;
+  background-image: url("../images/texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -163,14 +166,7 @@ input, textarea {
     border: 1px solid #999;
 }
 
-label {
-    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-    display: inline-block;
-    line-height: 100px;
-    width: 90px;
-    height: 100%;
-    text-align: right;
-}
+
 
 .contato {
     /* Apenas para centralizar o form na página */
@@ -218,13 +214,13 @@ width: 1300px;
 }
 /* Navbar links on mouse-over */
 .topnav a:hover {
-  background: url("images/texture-02.jpg");
+  background: url("/images/texture-02.jpg");
   color: white;
 }
 
 /* Active/current link */
 .topnav a.active {
-background: url("images/texture-02.jpg");
+background: url("/images/texture-02.jpg");
   color: white;
 }
 
@@ -239,7 +235,7 @@ background: url("images/texture-02.jpg");
 
 /* Style the input field inside the navbar */
 .topnav input[type=text] {
-  background: url("images/texture-02.jpg");
+  background: url("/images/texture-02.jpg");
   padding: 1%;
   margin-top: 5.9%;
   font-size: 17px;
@@ -353,7 +349,7 @@ opacity: 50%;
      border-radius: 3px;
      box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
                    0 2px 7px rgba(0, 0, 0, 0.2);
-     background: url("images/texture-02.jpg");
+     background: url("/images/texture-02.jpg");
      display: block;
      font-family: "Avenida";
      font-size: 24px;
