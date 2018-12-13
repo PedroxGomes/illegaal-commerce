@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/index.css)}}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="#">Home
+          </a></li>
+
+            <li>
+              <a href="#">Nossos Produtos
+              </a></li>
+
+                <li>
+                  <a href="#">Contato
+                  </a></li>
+
+                    <li>
+                      <a href="#">Sobre Nós
+                      </a></li>
+
+                        <li>
+                          <a href="#">Entrar
+                          </a></li>
+
+                            <li>
+                              <a href="#">Cadastre-se
+                              </a></li>
+        </ul>
+
+    </header>
+    <section id="principal">
+        <img class="slideshow" src="{{ asset ('/images/cassel-01.png)}}" style="width:100%" style="height:600px">
+        <img class="slideshow" src="{{ asset ('/images/cassel-02.png)}}" style="width:100%" style="height:600px">
+
+      <div class="section-elements">
+        <img class="beer-02" src="{{ asset ('/images/beer-02.png)}}" style="width:40%">
+        <img class="beer" src="{{ asset ('/images/beer.png)}}" style="width:20%">
+
+
+        <div class="content">
+             <a href="#" class="botao01">Saiba mais</a>
+            </div>
+
+    </section>
+    <section id="video">
+        <h2>Videos</h2>
+        <div class="video">
+          <video width="1000" height="720" controls>
+            <source src="{{ asset ('/images/ILLEGAAL.mp4)}}" type="{{ asset ('/video/mp4)}}">
+          </video>
+
+        </div>
+    </section>
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slideshow");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html>
