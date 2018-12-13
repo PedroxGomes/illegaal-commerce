@@ -16,7 +16,7 @@ background-image: url("../images/texture-02.jpg");
 
 @font-face {
     font-family: 'Avenida';
-    src: url('Fonts/Avenida-Std-Regular.otf');
+    src: url('../Fonts/Avenida-Std-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
