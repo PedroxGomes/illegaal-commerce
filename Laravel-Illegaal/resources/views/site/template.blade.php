@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{asset('css/illegaal.css')}">
+    <link href="{{ asset('css/illegaal.css') }}" rel="stylesheet">
     <title></title>
   </head>
   <body>
