@@ -22,6 +22,11 @@ Route::get('/contato', function () {
     return view('site.contato');
 });
 
+Route::get('/produtos', 'produtoController@listarProdutos');
+Route::get('/carrinho', 'produtoController@listarCarrinho');
+Route::get('/addproduto/{id}', 'produtoController@addProduto');
+Route::get('/deletarCarrinho', 'produtoController@deletarCarrinho');
+
 
 Route::get('/cadastro', function () {
     return view('cadastro');

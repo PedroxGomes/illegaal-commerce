@@ -1,35 +1,21 @@
-.card-body {
-background-image: url("../images/texture-02.jpg");
-}
-
-.card-header {
-background-image: url("../images/texture-02.jpg");
-}
-
-
-.btn {
-background-image: url("../images/texture-02.jpg");
-
-}
-
 {box-sizing: border-box;}
 
 @font-face {
     font-family: 'Avenida';
-    src: url('../Fonts/Avenida-Std-Regular.otf');
+    src: url('Fonts/Avenida-Std-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 
 body {
-  background-image: url("../images/texture.jpg");
-  background-repeat: no-repeat;
+background-image: url(../images/texture.jpg);
   background-size: cover;
-  height: 100vh;
-  margin: 0 auto;
 }
-
+.bk-carrinhos {
+  background-image: url(../images/fundo-produto-10.png);
+  background-size: cover;
+}
 .logo {
   width: 5.5%;
   margin-top: -0.1%;
@@ -40,7 +26,7 @@ body {
   position: relative;
   font-family: "Avenida";
   overflow: hidden;
-  background: url("/images/texture.jpg");
+  background: url("images/texture.jpg");
   margin-top: -0.1%;
 
 }
@@ -165,8 +151,19 @@ input, textarea {
     /* Para harmonizar o look & feel das bordas nos campos de texto*/
     border: 1px solid #999;
 }
-
-
+.img_Produto{
+    background-image: url('../images/fundo-produto-1.png');
+    background-size: cover;
+    background-position: center;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    line-height: 100px;
+    width: 90px;
+    height: 100%;
+    text-align: right;
+}
 
 .contato {
     /* Apenas para centralizar o form na página */
@@ -214,13 +211,13 @@ width: 1300px;
 }
 /* Navbar links on mouse-over */
 .topnav a:hover {
-  background: url("/images/texture-02.jpg");
+  background: url("images/texture-02.jpg");
   color: white;
 }
 
 /* Active/current link */
 .topnav a.active {
-background: url("/images/texture-02.jpg");
+background: url("images/texture-02.jpg");
   color: white;
 }
 
@@ -235,7 +232,7 @@ background: url("/images/texture-02.jpg");
 
 /* Style the input field inside the navbar */
 .topnav input[type=text] {
-  background: url("/images/texture-02.jpg");
+  background: url("images/texture-02.jpg");
   padding: 1%;
   margin-top: 5.9%;
   font-size: 17px;
@@ -349,7 +346,7 @@ opacity: 50%;
      border-radius: 3px;
      box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
                    0 2px 7px rgba(0, 0, 0, 0.2);
-     background: url("/images/texture-02.jpg");
+     background: url("images/texture-02.jpg");
      display: block;
      font-family: "Avenida";
      font-size: 24px;
@@ -398,3 +395,64 @@ opacity: 50%;
      box-shadow:none;
 
     }
+
+    .caixa-produto-01 {
+height: 185px;
+width: 250px;
+position: absolute;
+z-index: 10;
+margin-left: 100px;
+margin-top: 115px;
+
+    }
+
+    .produto-01-carrinho {
+      position: absolute;
+      z-index: 11;
+    }
+
+  #botao-produto-01 {
+    position: absolute;
+    z-index: 12;
+    margin-left: 1000px;
+    margin-top: 58px;
+  }
+
+  .quantidade-produto-01 {
+position: absolute;
+z-index: 13;
+width: 50px;
+margin-left: 1000px;
+margin-top: 180px;
+  }
+
+  .fundo-produtos-05 {
+    position: absolute;
+    z-index: 9;
+    margin-left: 100px;
+    margin-top: 115px;
+  }
+
+  .nome-do-produto {
+    font-size: 12px;
+    margin-left: 200px;
+    color: white;
+    margin-top: 168px;
+    position: absolute;
+    z-index: 14;
+  }
+  .preco-do-produto {
+    font-size: 15px;
+    margin-left: 900px;
+    color: white;
+    margin-top: 163px;
+    position: absolute;
+    z-index: 14;
+  }
+
+  .titulo {
+    position: absolute;
+    z-index: 15;
+    color: white;
+    margin-left: 100px;
+  }

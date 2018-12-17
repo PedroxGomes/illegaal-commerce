@@ -1,6 +1,4 @@
-*{
-  box-sizing: border-box;
-}
+{box-sizing: border-box;}
 
 @font-face {
     font-family: 'Avenida';
@@ -199,7 +197,7 @@ label {
 
 .midias-socias{
   margin: 0 auto;
-position: 0 ;
+position: ;
 left: 40%;
 margin-top: 70%;
 width: 1300px;
@@ -357,7 +355,7 @@ opacity: 50%;
      color: black;
 }
 
-:before{
+.:before{
      border: 1px solid #FFF;
      border-radius: 3px;
      box-shadow: inset 0 -2px 12px -4px rgba(70, 70, 70, .2),
@@ -390,3 +388,64 @@ opacity: 50%;
      box-shadow:none;
 
     }
+
+    .caixa-produto-01 {
+height: 185px;
+width: 250px;
+position: absolute;
+z-index: 10;
+margin-left: 100px;
+margin-top: 115px;
+
+    }
+
+    .produto-01-carrinho {
+      position: absolute;
+      z-index: 11;
+    }
+
+  #botao-produto-01 {
+    position: absolute;
+    z-index: 12;
+    margin-left: 1000px;
+    margin-top: 58px;
+  }
+
+  .quantidade-produto-01 {
+position: absolute;
+z-index: 13;
+width: 50px;
+margin-left: 1000px;
+margin-top: 180px;
+  }
+
+  .fundo-produtos-05 {
+    position: absolute;
+    z-index: 9;
+    margin-left: 100px;
+    margin-top: 115px;
+  }
+
+  .nome-do-produto {
+    font-size: 12px;
+    margin-left: 200px;
+    color: white;
+    margin-top: 168px;
+    position: absolute;
+    z-index: 14;
+  }
+  .preco-do-produto {
+    font-size: 15px;
+    margin-left: 900px;
+    color: white;
+    margin-top: 163px;
+    position: absolute;
+    z-index: 14;
+  }
+
+  .titulo {
+    position: absolute;
+    z-index: 15;
+    color: white;
+    margin-left: 100px;
+  }
