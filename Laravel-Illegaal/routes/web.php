@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::get('/illegaal', function () {
     return view('illegaal');
 });
+Route::get('/contato', function () {
+    return view('site.contato');
+});
+
 
 Route::get('/cadastro', function () {
     return view('cadastro');
