@@ -37,12 +37,12 @@ Route::get('/admin', "adminLogin@home")->name('admin');
 Route::get('/admin/listagemprodutos', "adminLogin@listagemprodutos")->name('listagemprodutos');
 
 Route::get('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos")->name('cadastrarprodutos');
+Route::post('/admin/cadastrarprodutos', "adminLogin@cadastrarprodutos")->name('cadastrarprodutos');
+Route::get('/admin/cadastrarclientes', "adminLogin@cadastrarclientes")->name('cadastrarclientes');
 
-Route::get('/admin/cadastrarclientes', "adminLogin@cadastrarclientes")->name('cadastrarcliente');
-
-Route::get('/admin/editarprodutos', "adminLogin@editarprodutos")->name('editarprodutos');
-
-Route::get('/admin/editarprodutos', "adminLogin@editarprodutos");
+Route::get('/admin/editarprodutos/{id}', "adminLogin@editarprodutos");
+Route::post('/admin/editarprodutos/{id}', "adminLogin@editarprodutos");
+Route::get('/admin/excluirproduto/{id}', "adminLogin@excluirproduto");
 
 
 Auth::routes();

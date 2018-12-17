@@ -22,7 +22,6 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="{{ route('cadastrarprodutos') }}">Cadastrar Produtos</a>
-            <a class="dropdown-item" href="{{ route('editarprodutos') }}">Editar Produtos</a>
             <a class="dropdown-item" href="{{ route('listagemprodutos') }}">Listagem de produtos</a>
           </div>
         </li>
